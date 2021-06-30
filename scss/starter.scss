@@ -36,6 +36,7 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
+$color-pink:#FFF5F6;
 
 /*
 @import "bootstrap/scss/functions"; // Required
@@ -87,13 +88,20 @@ $success: #7952b3;
 
 body {
   font-family: 'Work Sans';
-  padding: 3rem 1.5rem;
   line-height: 1.7rem;
 }
 
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
+}
+
+.bg-pink {
+  background-color: $color-pink;
+}
+
+section {
+  padding: 3rem 0;
 }
 
 h2, .h2 {
@@ -119,20 +127,4 @@ h2, .h2 {
   text-transform: uppercase;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.mb-7 {
-  margin-bottom: 7rem;
-}
-
-@media (max-width: 991.98px) { 
-  .mb-7 {
-    margin-bottom: 5rem;
-  }
-}
-
-@media (max-width: 575.98px) { 
-  .mb-7 {
-    margin-bottom: 3rem;
-  }
 }
